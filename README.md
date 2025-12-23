@@ -4,7 +4,7 @@ This repository presents an **end-to-end, production-grade machine learning syst
 
 The project  integrates engineers domain-specific features and computes the Water Quality Index (WQI); trains and compares multiple ML and ensemble models with probability calibration using Platt scaling; and leverages SHAP for model explainability. Finally, it provides actionable, data-driven recommendations for real-world water treatment and quality improvement.
 
----
+ 
 
 ##  Objective
 
@@ -20,7 +20,7 @@ The objective of this project is to design a **robust, interpretable and reliabl
 
 The ultimate goal is to build a **decision-support system** for environmental monitoring, public health analysis and water treatment planning.
 
----
+ 
 
 ##  Key Features
 
@@ -34,7 +34,7 @@ The ultimate goal is to build a **decision-support system** for environmental mo
   * Random oversampling
   * **SMOTE + Tomek Links**
 
----
+ 
 
 ###  Feature Engineering & Domain Logic
 
@@ -50,7 +50,7 @@ The ultimate goal is to build a **decision-support system** for environmental mo
 
   * *Excellent → Good → Poor → Very Poor → Unsuitable*
 
----
+ 
 
 ###  Machine Learning Models
 
@@ -74,7 +74,7 @@ All models were tuned using **GridSearchCV** and evaluated using:
 * F1 Score
 * ROC-AUC
 
----
+ 
 
 ###  Ensemble Learning
 
@@ -84,7 +84,7 @@ All models were tuned using **GridSearchCV** and evaluated using:
   * Logistic Regression
   * Ridge Classifier
 
----
+ 
 
 ###  Probability Calibration
 
@@ -96,7 +96,7 @@ All models were tuned using **GridSearchCV** and evaluated using:
   * Reliability (Calibration) Curves
 * Ensures **trustworthy probability estimates**, not just class predictions
 
----
+ 
 
 ###  Explainability with SHAP
 
@@ -110,7 +110,7 @@ All models were tuned using **GridSearchCV** and evaluated using:
   * Waterfall plots for individual samples
 * Chemical interpretation of features influencing potability predictions
 
----
+ 
 
 ###  Actionable Water Treatment Recommendations
 
@@ -123,7 +123,7 @@ All models were tuned using **GridSearchCV** and evaluated using:
   * Turbidity reduction
   * Filtration / Reverse Osmosis (RO) guidance
 
----
+ 
 
 ### Custom Sample Prediction
 
@@ -135,14 +135,14 @@ User-facing function to:
 * Explain predictions using SHAP
 * Generate actionable treatment recommendations
 
----
+ 
 
 ##  Results & Model Performance
 
 ###  Top 4 Individual Models (Oversampled Dataset)
 
 | Model             | Accuracy   | F1 Score   | ROC-AUC    | Confusion Matrix       |
-| ----------------- | ---------- | ---------- | ---------- | ---------------------- |
+|      -- |    - |    - |    - |        - |
 | **Extra Trees**   | **0.8575** | **0.8465** | **0.9192** | [[362, 28], [83, 306]] |
 | Random Forest     | 0.8383     | 0.8376     | 0.9136     | [[328, 62], [64, 325]] |
 | Gradient Boosting | 0.8139     | 0.8190     | 0.8973     | [[306, 84], [61, 328]] |
@@ -151,7 +151,7 @@ User-facing function to:
  **Observation:**
 Extra Trees achieved the strongest standalone performance, particularly in **ROC-AUC**, indicating excellent class discrimination.
 
----
+ 
 
 ###  Stacking Ensemble Performance
 
@@ -162,12 +162,12 @@ Extra Trees achieved the strongest standalone performance, particularly in **ROC
 
 The stacking ensemble outperformed all individual models in raw predictive accuracy.
 
----
+ 
 
 ###  Calibrated Stacking Ensemble (Platt Scaling)
 
 | Metric      | Value  |
-| ----------- | ------ |
+|    -- |    |
 | Accuracy    | 0.8562 |
 | F1 Score    | 0.8515 |
 | ROC-AUC     | 0.8886 |
@@ -176,7 +176,7 @@ The stacking ensemble outperformed all individual models in raw predictive accur
  **Key Insight:**
 Calibration slightly reduced accuracy but **significantly improved probability reliability**, making the model suitable for **risk-sensitive, real-world decision-making**.
 
----
+ 
 
 ###  Reliability & Decision Readiness
 
@@ -187,7 +187,7 @@ Calibration slightly reduced accuracy but **significantly improved probability r
   * Public health alerts
   * Water treatment planning
 
----
+ 
 
 ##  Summary of Findings
 
@@ -197,14 +197,14 @@ Calibration slightly reduced accuracy but **significantly improved probability r
 * **Platt calibration** improves probability trustworthiness
 * **SHAP + WQI** enhance interpretability and domain usability
 
----
+ 
 
 ##  Dataset
 
 **Water Potability Dataset (Kaggle)**
 [https://www.kaggle.com/datasets/adityakadiwal/water-potability](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
 
----
+ 
 
 ##  Tech Stack
 
@@ -216,11 +216,11 @@ Calibration slightly reduced accuracy but **significantly improved probability r
 * SHAP
 * Matplotlib
 
----
+ 
 
 ## Project Goal
 
 To move beyond simple classification and build a **reliable, interpretable and decision-ready water quality prediction system** suitable for **environmental monitoring, public health and water treatment decision support**.
 
----
+ 
 

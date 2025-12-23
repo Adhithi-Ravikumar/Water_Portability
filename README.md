@@ -1,2 +1,3 @@
 # Water_Portability
 Water Potability Prediction with WQI, Ensembles, Calibration &amp; SHAP
+An end-to-end machine learning pipeline for comprehensive water quality analysis using the Kaggle Water Potability dataset. The project performs advanced preprocessing to address missing data, skewness, outliers, and class imbalance; engineers domain-specific features and computes the Water Quality Index (WQI); trains and compares multiple ML and ensemble models with probability calibration using Platt scaling; and leverages SHAP for model explainability. Finally, it provides actionable, data-driven recommendations for real-world water treatment and quality improvement.
